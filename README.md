@@ -1,9 +1,9 @@
 # j-Techtogether-2022
 
-Inspiration
+# Inspiration
 We wanted to help people make a positive environmental impact by indicating the little ways in which they can help the planet through their lifestyle choices.
 
-What it does
+# What it does
 We are creating a website to help people keep track of their hydration and the amount of plastic that they consume. According to The Economist, only 9% of the world's plastic is recycled. By clicking the icon on the webpage, the users are able to record their hydration and be aware of how much plastic they consume.
 
 The user inputs information about their daily life and gets statistics and visuals about how environmentally friendly they are. In this way, people can be more aware of the amount of plastic that day consume and its impact on our planet. Additionally, this website includes some sources where people can purchase refillable bottles and reusable utensils. Replacing plastic with reusable items could save the planet.
