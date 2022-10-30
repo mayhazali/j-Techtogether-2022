@@ -14,6 +14,28 @@
         background-size: 1390px 670px;
         }
     </style>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+    
+      function drawChart(water, tea, coffee, juice) {
+        var data = google.visualization.arrayToDataTable([
+          ['Beverage', 'Consumption'],
+          ['Water', Number(water)],
+          ['Tea',   Number(tea)],
+          ['Coffee',Number(coffee)],
+          ['Juice', Number(juice)]
+        ]);
+
+        var options = {
+          title: 'Hydration',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
 </head>
 <body>
     <!-- <img src ="/j-Techtogether-2022/images/SubPage/hydration/hydration_page_title.png">
@@ -54,6 +76,18 @@
             View Chart
         </button>
     </div>
+    <button type="button" onclick="getInputValue();">Draw Chart</button>
+    <script>
+      function getInputValue() {
+        let water = document.getElementById('water').value;
+        let tea = document.getElementById('tea').value;
+        let coffee = document.getElementById('coffee').value;
+        let juice = document.getElementById('juice').value;
+        drawChart(water, tea, coffee, juice)
+      }
+    </script>
+
+    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
 
 
 <script src="index.js"></script>
