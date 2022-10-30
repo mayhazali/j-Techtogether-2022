@@ -13,7 +13,11 @@
         background-attachment: flex;
         background-size: 1390px 670px;
         }
+        input {
+            text-align: right;
+        }
     </style>
+
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
@@ -82,23 +86,22 @@
 
         function incrementWater(){
             water++;
-            //document.getElementById("waterVal").innerHTML = water;
             document.getElementById('waterVal').value = water;
             displayChart();
         }
          function incrementTea(){
             tea++;
-            //document.getElementById("teaVal").innerHTML = tea;
-             displayChart();
+            document.getElementById("teaVal").value = tea;
+            displayChart();
          }
          function incrementCoffee(){
             coffee++;
-            //document.getElementById("coffeeVal").innerHTML = coffee;
+            document.getElementById("coffeeVal").value = coffee;
             displayChart();
          }
          function incrementJuice(){
             juice++;
-            //document.getElementById("juiceVal").innerHTML = juice;
+            document.getElementById("juiceVal").value = juice;
             displayChart();
          }
 
