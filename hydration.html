@@ -78,13 +78,31 @@
     </div>
     <button type="button" onclick="getInputValue();">Draw Chart</button>
     <script>
-      function getInputValue() {
-        let water = document.getElementById('water').value;
-        let tea = document.getElementById('tea').value;
-        let coffee = document.getElementById('coffee').value;
-        let juice = document.getElementById('juice').value;
-        drawChart(water, tea, coffee, juice)
-      }
+        var water= 0;
+        var tea= 0;
+        var coffee= 0;
+        var juice= 0;
+
+        function incrementWater(){
+            water++;
+        }
+         function incrementTea(){
+            tea++;
+         }
+         function incrementCoffee(){
+            coffee++;
+         }
+         function incrementJuice(){
+            juice++;
+         }
+
+        function getInputValue() {
+            let water = document.getElementById('water').value;
+            let tea = document.getElementById('tea').value;
+            let coffee = document.getElementById('coffee').value;
+            let juice = document.getElementById('juice').value;
+            drawChart(water, tea, coffee, juice)
+        }
     </script>
 
     <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
