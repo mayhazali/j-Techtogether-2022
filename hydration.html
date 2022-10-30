@@ -63,10 +63,10 @@
             <td>Juice</td>
         </tr>
         <tr> 
-            <td> 0% </td>
-            <td> 0% </td>
-            <td> 0% </td>
-            <td> 0% </td>
+            <td> <input type="text" id="waterVal" disabled> </td>
+            <td> <input type="text" id="teaVal" disabled> </td>
+            <td> <input type="text" id="coffeeVal" disabled> </td>
+            <td> <input type="text" id="juiceVal" disabled> </td>
         </tr>
     </table>
 
@@ -85,15 +85,19 @@
 
         function incrementWater(){
             water++;
+            document.getElementById("waterVal").innerHTML = water;
         }
          function incrementTea(){
             tea++;
+            document.getElementById("teaVal").innerHTML = tea;
          }
          function incrementCoffee(){
             coffee++;
+            document.getElementById("coffeeVal").innerHTML = coffee;
          }
          function incrementJuice(){
             juice++;
+            document.getElementById("juiceVal").innerHTML = juice;
          }
 
         function getInputValue() {
@@ -101,7 +105,7 @@
         }
     </script>
 
-    <div id="piechart_3d" style="width: 500px; height: 400px; text-align:center; background-color: #EB6122;"></div>
+    <div id="piechart_3d" style="width: 500px; height: 400px; align:center;"></div>
 
 
 <script src="index.js"></script>
