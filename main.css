@@ -3,6 +3,15 @@ html, body {
     height: 100%;
 }
 
+body {
+    background-image: url('./images/GREENIE.png');
+    background-color: #0b0500;
+    background-position: justify;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
 .hydration {
     display: block;
     position: sticky;
@@ -11,7 +20,6 @@ html, body {
     margin-top: 450px;
     margin-left: 400px;
     margin-right: 0px;
-
 }
 
 .hydration1 {
@@ -34,7 +42,6 @@ html, body {
     margin-right: 0px;
 
 }
-
 
 
 
@@ -98,10 +105,6 @@ html, body {
 
 
 
-
-
-
-
 h1 {
     font-style: normal;
     font-size: 80px;
@@ -141,7 +144,7 @@ table {
     border: none;
     position: center;
     text-align: center;
-    margin-left: 380px;
+    margin-left: 0px;
     margin-right: 0px;
 }
 
