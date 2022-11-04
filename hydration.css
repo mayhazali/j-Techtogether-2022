@@ -17,16 +17,55 @@ table {
     border: none;
     position: center;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 400px;
     margin-right: 0px;
 }
 
 .parent{
     display:inline-flex;
-    margin-top: 300px;
-    margin-left: 300px;
+    margin-top: 50px;
+    margin-left: 400px;
 }
 .child{
     width:200px;
     height:200px;
+}
+.parent2{
+    display:inline-flex;
+    margin-top: 0px;
+    margin-left: 400px;
+}
+.child2{
+    text-align: center;
+    width:200px;
+    height:20px;
+}
+.parent3{
+    display:inline-flex;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+.child3{
+    width:200px;
+    height:20px;
+}
+
+.chartParent{
+    display:inline-flex;
+    margin-top: 0px;
+    margin-left: 300px;
+}
+.chartChild{
+    width:500px;
+    height:500px;
+}
+
+.child img{
+    opacity:1;
+    transition: 1s ease;
+}
+    
+.child img:hover{
+    opacity:0.5;
+    transition: 1s ease;
 }

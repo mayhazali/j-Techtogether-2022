@@ -7,8 +7,8 @@ var juice= 0;
 
 var greenie= 100;
 var plastic= 0;
-var paper= 0;
-var plantation= 0;
+var carbon= 0;
+var deforestation= 0;
 
 function incrementWater(){
     water++;
@@ -18,15 +18,15 @@ function incrementWater(){
 }
  function incrementTea(){
     tea++;
-    paper++;
-    plantation++;
+    carbon++;
+    deforestation++;
     document.getElementById("teaVal").value = tea;
     displayChart();
  }
  function incrementCoffee(){
     coffee++;
-    paper++;
-    Plantation++;
+    carbon++;
+    deforestation++;
     document.getElementById("coffeeVal").value = coffee;
     displayChart();
  }
@@ -36,27 +36,6 @@ function incrementWater(){
     document.getElementById("juiceVal").value = juice;
     displayChart();
  }
-
- function susWater(){
-  water++;
-  document.getElementById('waterVal').value = water;
-  displayChart();
-}
-function susTea(){
-  tea++;
-  document.getElementById("teaVal").value = tea;
-  displayChart();
-}
-function susCoffee(){
-  coffee++;
-  document.getElementById("coffeeVal").value = coffee;
-  displayChart();
-}
-function susJuice(){
-  juice++;
-  document.getElementById("juiceVal").value = juice;
-  displayChart();
-}
     
 function drawChart(water, tea, coffee, juice) {
   var data = google.visualization.arrayToDataTable([
@@ -76,13 +55,13 @@ function drawChart(water, tea, coffee, juice) {
   chart.draw(data, options);
 }
 
-function drawSusChart(greenie, plastic, paper, plantation) {
+function drawSusChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Material', 'Impact'],
-    ['Greenie', Number(greenie)],
+    ['Sustainability', 'Impact'],
+    ['Deforestation', Number(deforestation)],
     ['Plastic',   Number(plastic)],
-    ['Paper',Number(paper)],
-    ['Plantation', Number(plantation)]
+    ['Carbon Footprint',Number(carbon)],
+    ['Greenie!', Number(greenie)]
   ]);
 
   var options = {
@@ -96,5 +75,5 @@ function drawSusChart(greenie, plastic, paper, plantation) {
 
 function displayChart() {
     drawChart(water, tea, coffee, juice)
-    drawSusChart(greenie, plastic, paper, plantation)
+    drawSusChart()
 }

@@ -22,13 +22,37 @@ table {
     margin-right: 0px;
 }
 
+p {
+    font-style: normal;
+    font-size: 26px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 130px;
+    margin-right: 0px; 
+}
+
+.p_top {
+    margin-top: 200px;
+}
+
 .parent{
     display:inline-flex;
-    margin-top: 300px;
-    margin-left: 300px;
+    margin-top: 50px;
+    margin-left: 400px;
 }
   .child{
     width:200px;
     height:200px;
+}
+
+.child img{
+    opacity:1;
+    transition: 1s ease;
+}
+    
+.child img:hover{
+    opacity:0.5;
+    transition: 1s ease;
 }
 

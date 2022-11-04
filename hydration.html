@@ -22,34 +22,34 @@
      -->
 
 
-    <table> 
-        <tr> 
-            <td><img src="./images/SubPage/hydration/water_icon.png" height="200" width="200" onclick="incrementWater()"></td>
-            <td><img src="./images/SubPage/hydration/tea_icon.png" height="200" width="200" onclick="incrementTea()"></td>
-            <td><img src="./images/SubPage/hydration/coffee_icon.png" height="200" width="200" onclick="incrementCoffee()"></td>
-            <td><img src="./images/SubPage/hydration/juice_icon.png" height="200" width="200" onclick="incrementJuice()"></td>
-        </tr>
-        <tr> 
-            <td>Water</td>
-            <td>Tea</td>
-            <td>Coffee</td>
-            <td>Juice</td>
-        </tr>
-        <tr> 
-            <td> <input type="text" id="waterVal" disabled> </td>
-            <td> <input type="text" id="teaVal" disabled> </td>
-            <td> <input type="text" id="coffeeVal" disabled> </td>
-            <td> <input type="text" id="juiceVal" disabled> </td>
-        </tr>
-    </table>
-
-    <div style="text-align:center">
-        <p> JUST HOW HYDRATING CAN EACH DRINK BE? - Click on the drink image to visualize </p>
+    <div> 
+        <div class="parent"> 
+            <div class="child"><img src="./images/SubPage/hydration/water_icon.png" height="200" width="200" onclick="incrementWater()"></div>
+            <div class="child"><img src="./images/SubPage/hydration/tea_icon.png" height="200" width="200" onclick="incrementTea()"></div>
+            <div class="child"><img src="./images/SubPage/hydration/coffee_icon.png" height="200" width="200" onclick="incrementCoffee()"></div>
+            <div class="child"><img src="./images/SubPage/hydration/juice_icon.png" height="200" width="200" onclick="incrementJuice()"></div>
+        </div>
+        <div class="parent2"> 
+            <div class="child2">Water</div>
+            <div class="child2">Tea</div>
+            <div class="child2">Coffee</div>
+            <div class="child2">Juice</div>
+        </div>
+        <div class="parent3"> 
+            <div class="child3"> <input type="text" id="waterVal" disabled> </div>
+            <div class="child3"> <input type="text" id="teaVal" disabled> </div>
+            <div class="child3"> <input type="text" id="coffeeVal" disabled> </div>
+            <div class="child3"> <input type="text" id="juiceVal" disabled> </div>
+        </div>
     </div>
 
-    <div class="parent">
-        <div id="piechart_3d" class="child" style="width: 400px; height: 300px;"></div>
-        <div id="piechartSus_3d" class="child" style="width: 400px; height: 300px;"></div>
+    <div style="text-align:center">
+        <p> Click on the drink image to record your intake. </p>
+    </div>
+
+    <div class="chartParent">
+        <div id="piechart_3d" class="chartChild"></div>
+        <div id="piechartSus_3d" class="chartChild"></div>
     </div>
 </body>
 </html>
