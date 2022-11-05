@@ -27,6 +27,7 @@ table {
     margin-left: 400px;
 }
 .child{
+    text-align: center;
     width:200px;
     height:200px;
 }
@@ -46,6 +47,7 @@ table {
     margin-left: 400px;
 }
 .child3{
+    text-align: center;
     width:200px;
     height:20px;
 }
@@ -68,4 +70,5 @@ table {
 .child img:hover{
     opacity:0.5;
     transition: 1s ease;
+    cursor: pointer;
 }
