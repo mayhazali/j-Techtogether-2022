@@ -157,3 +157,9 @@ table2 {
     margin-left: 580px;
     margin-right: 0px;
 }
+
+.child img:hover{
+    opacity:0.5;
+    transition: 1s ease;
+    cursor: pointer;
+}

@@ -33,7 +33,7 @@ p {
 }
 
 .p_top {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .parent{
@@ -53,6 +53,12 @@ p {
 }
     
 .child img:hover{
+    opacity:0.5;
+    transition: 1s ease;
+    cursor: pointer;
+}
+
+.fa-home:hover {
     opacity:0.5;
     transition: 1s ease;
     cursor: pointer;
